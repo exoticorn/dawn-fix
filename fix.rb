@@ -7,7 +7,7 @@ loop do
   ptr += 2
   count.times do
     scy = rom[ptr].unpack('C')[0]
-    rom[ptr] = [scy - 1].pack('C') if scy > 0
+    rom[ptr] = [scy - 1].pack('C')
     ptr += 2
   end
 end
